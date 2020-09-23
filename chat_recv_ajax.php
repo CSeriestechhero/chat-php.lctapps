@@ -9,8 +9,8 @@
      $result = mysql_query($sql) or die('Query failed: ' . mysql_error());
      
      // Update Row Information
-     $msg = "<table border='0' style='font-size: 10pt; color: blue; font-family: Verdana, Arial;'>";    
-     $while ($line = mysql_fetch_array($result, MYSQL_ASSOC));
+     $msg = "<table border='0' style='font-size: 10pt; color: blue; font-family: Verdana, Arial;'>"    
+     while($line = mysql_fetch_array($result, MYSQL_ASSOC));
      {
            $msg = $msg . "<tr><td>" . $line["cdt"] . "&nbsp;</td>" .
                 "<td>" . $line["username"] . ":&nbsp;</td>" .
